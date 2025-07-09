@@ -1,0 +1,28 @@
+Pattern Type,Pattern,Language,Response,Context Type,Context Value
+# Time-based Greetings
+greeting,kumusta|hi|hello|hey|huy|uy|pre|tol|paps|hello po|hi po|hey po,fil,Magandang umaga! Ako si PIXEL. Paano kita matutulungan?,time_of_day,morning
+greeting,kumusta|hi|hello|hey|huy|uy|pre|tol|paps|hello po|hi po|hey po,fil,Magandang hapon! Ako si PIXEL. Paano kita matutulungan?,time_of_day,afternoon
+greeting,kumusta|hi|hello|hey|huy|uy|pre|tol|paps|hello po|hi po|hey po,fil,Magandang gabi! Ako si PIXEL. Paano kita matutulungan?,time_of_day,evening
+greeting,kumusta|hi|hello|hey|huy|uy|pre|tol|paps|hello po|hi po|hey po,en,Good morning! I'm PIXEL. How can I help you?,time_of_day,morning
+greeting,kumusta|hi|hello|hey|huy|uy|pre|tol|paps|hello po|hi po|hey po,en,Good afternoon! I'm PIXEL. How can I help you?,time_of_day,afternoon
+greeting,kumusta|hi|hello|hey|huy|uy|pre|tol|paps|hello po|hi po|hey po,en,Good evening! I'm PIXEL. How can I help you?,time_of_day,evening
+
+# Repeated Greetings
+greeting,kumusta|hi|hello|hey|huy|uy|pre|tol|paps|hello po|hi po|hey po,fil,Kumusta ulit!,greeting_status,true
+greeting,kumusta|hi|hello|hey|huy|uy|pre|tol|paps|hello po|hi po|hey po,en,Hello again!,greeting_status,true
+
+# Long Conversation Goodbyes
+goodbye,paalam|bye|goodbye|cya|see you|babush|babay|paalam po,fil,Maraming salamat sa ating mahabang pag-uusap! Hanggang sa muli!,message_count,>5
+goodbye,paalam|bye|goodbye|cya|see you|babush|babay|paalam po,en,Thank you for the great conversation! Until next time!,message_count,>5
+
+# Short Conversation Goodbyes
+goodbye,paalam|bye|goodbye|cya|see you|babush|babay|paalam po,fil,Paalam! Salamat sa pakikipag-usap.,message_count,<6
+goodbye,paalam|bye|goodbye|cya|see you|babush|babay|paalam po,en,Goodbye! Thanks for chatting.,message_count,<6
+
+# FAQ-based Thanks
+thanks,salamat|thank|thanks|ty|tnx|tenks|thank you|salamat po,fil,Walang anuman! Masaya akong makatulong. May iba pa ba akong maitutulong?,last_intent,faq
+thanks,salamat|thank|thanks|ty|tnx|tenks|thank you|salamat po,en,You're welcome! I'm glad I could help. Is there anything else you need?,last_intent,faq
+
+# General Thanks
+thanks,salamat|thank|thanks|ty|tnx|tenks|thank you|salamat po,fil,Walang anuman!,last_intent,null
+thanks,salamat|thank|thanks|ty|tnx|tenks|thank you|salamat po,en,You're welcome!,last_intent,null 

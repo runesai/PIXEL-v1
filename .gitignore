@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+share/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+credentials.json
+
+# IDE settings (optional)
+.vscode/
+.idea/ 
