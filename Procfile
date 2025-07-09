@@ -1,1 +1,1 @@
-web: gunicorn pixel_messenger:app 
+web: gunicorn pixel_messenger_v1:app 
