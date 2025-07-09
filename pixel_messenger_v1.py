@@ -13,6 +13,17 @@ import random
 import re
 import time
 from sheets_utils import get_weekly_room_schedule, get_vacant_rooms
+import base64
+
+# Decode the environment variable
+creds_base64 = os.getenv("GOOGLE_CREDS_BASE64")
+
+if creds_base64:
+    creds_json = base64.b64decode(creds_base64).decode('utf-8')
+    with open("credentials.json", "w") as f:
+        f.write(creds_json)
+else:
+    raise Exception("GOOGLE_CREDS_BASE64 environment variable is not set.")
 
 # Load environment variables
 load_dotenv()
